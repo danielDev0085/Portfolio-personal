@@ -1,0 +1,318 @@
+body{
+    background-color: rgb(226, 223, 223);
+}
+
+/*----BARRA DE NAVEGACIÓN----*/
+header .nav{
+    margin-top: 30px;
+    min-height: 80px;
+    background-color: white;
+    margin-bottom: 40px;
+}
+
+/*--Logo--*/
+header .logo h2,
+header .logo span,
+header .logo p {
+    font-size: 16px;
+    display: inline-block;
+    margin: 0;
+}
+
+header .logo h2{
+    font-weight: 800;
+}
+
+header .logo .icono{
+    color:grey
+}
+
+/*----MENÚ DE NAVEGACIÓN----*/
+
+/*--Enlaces--*/
+header .navbar a{
+    color: white;
+    padding: 0px 30px;
+}
+
+header .navbar .c-1{background-color: rgb(2, 2, 69);}
+header .navbar .c-2{background-color: rgb(0, 145, 255);}
+header .navbar .c-1 :hover{background-color: rgb(2, 2, 69);}
+header .navbar .c-2 :hover{background-color: rgb(0, 145, 255);}
+header .navbar span{ font-weight: 600;}
+
+
+/*----TÍTULOS----*/
+.titulo{
+    color: rgb(71, 71, 198);
+    /*margin: 40px 0px;*/
+    font-weight: 600;
+    font-family: 'open-sans', sans-serif;
+}
+
+/*----ABOUT ME----*/
+
+/*----Botones aptitudes----*/
+main .aptitudes{
+    margin: 10px 10px 10px 10px;
+}
+
+main .aptitudes .bg-dark,
+main .aptitudes .bg-primary,
+main .aptitudes .bg-secondary{
+   color: white;
+}
+
+/*----Párrafo descripción----*/
+main .contenedor-about-me .parrafo{
+    font-family: 'open-sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/*----Imágen----*/
+main .contenedor-about-me .imagen{
+    border-radius: 5px;
+    box-shadow: 10px, 15px, 25px, 0 rgba(0, 0, 0, .2);
+    transition: all .5 cubic-bezier(0.645, 0.045, 0.355, 1);
+    width: 475px;
+}
+
+main .contenedor-about-me:hover .imagen{
+    box-shadow: 1px, 1px, 10px, 0 rgba(0, 0, 0, .1);
+}
+
+
+/*----CONTENEDOR TECNOLOGÍAS----*/
+.cont-tecnologias{
+    text-align: center;
+    background-color: white;
+}
+
+/*----Imágenes----*/
+.tecnologias .imagen{
+    max-height: 200px;
+    height: 200px;
+    margin: 20px 0px;
+}
+
+.tecnologias .contenedor-imagen:hover{
+    opacity: .7;
+}
+
+/*----Ventana modal-dialog----*/
+.tecnologias .modal-dialog{
+    max-width: 1000px;
+    height: 100%;
+    max-height: 100%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*----FORMULARIO----*/
+
+/*----Textarea----*/
+main form .textArea{
+    min-height: 150px;
+    max-height: 400px;
+    height: 150px;
+}
+
+/*----Botón----*/
+main form button{
+    color: white;
+    background-color: rgb(93, 93, 208);
+    cursor: pointer;
+}
+main form button:hover{
+    opacity: .7;
+}
+
+/*----FOOTER----*/
+footer .redes-sociales{
+    margin-bottom: 40px;
+    border-top: solid 5px rgb(93, 93, 208);
+}
+
+/*----Barra pié de página----*/
+footer .nav{
+    height: 120px;
+    padding: 30px 0px;
+}
+
+/*----Iconos----*/
+footer .nav i{
+    display: inline-block;
+    margin: 0px 40px;
+    width: 80px;
+    height: 80px; 
+    line-height: 80px;
+    font-size: 35px;
+    border-radius: 100px;
+    text-align: center;
+    align-items: center;
+    transition: all .3 ease;
+    cursor: pointer;
+}
+
+footer .nav i:hover{
+    opacity: .7;
+}
+
+/*----linkedin----*/
+footer .nav .linkedin{
+    background-color: darkblue;
+    color: white;
+}
+
+/*----Twitter----*/
+footer .nav .twitter{
+    background-color: rgb(47, 47, 159);
+    color: white;
+}
+
+/*----Github----*/
+footer .nav .github{
+    background-color: white;
+    color: black;
+    font-size: 45px;
+}
+
+
+/*----MEDIAQUERIES----*/
+
+/*----Dispositivo xl----*/
+@media screen and (max-width:1199px) {
+
+}
+
+/*----Dispositivo lg----*/
+@media screen and (max-width:992px) {
+    .contenedor-imagen-me img{
+        width: 440px;
+    }
+
+	.logo {
+		height: 76px;
+	}
+
+	.navbar {
+		min-height: 76px;
+	}
+
+	.navbar a {
+		width: 100%;
+	}
+
+	.navbar a div {
+		width: 100%;
+	}
+
+    /*--Orden imágenes tecnologías--*/
+    .tecnologias .galeria .contenedor-imagen:nth-child(1) {order:3;}
+	.tecnologias .galeria .contenedor-imagen:nth-child(2) {order:2;}
+	.tecnologias .galeria .contenedor-imagen:nth-child(3) {order:4;}
+	.tecnologias .galeria .contenedor-imagen:nth-child(4) {order:5;}
+	.tecnologias .galeria .contenedor-imagen:nth-child(5) {order:6;}
+	.tecnologias .galeria .contenedor-imagen:nth-child(6) {order:1;}
+	.tecnologias .galeria .contenedor-imagen:nth-child(7) {order:7;}
+
+    .modal .modal-dialog{
+        width: 90%;
+    }
+
+    .modal .modal-dialog .modal-content img{
+        width: 100%;
+    }
+}
+
+/*----Dispositivo tablet----*/
+@media screen and (max-width:767.11px) {
+    body .cont-tecnologias .contenedor-imagen img{
+        height: 150px;
+    } 
+}
+
+/*----Dispositivo pequeños----*/
+@media screen and (max-width:575px) {
+
+    header .logo {
+        justify-content: space-between;
+    }
+    header .logo p{
+        text-align: right;
+    }
+    
+    main .contenedor-imagen-me .imagen{
+        width: 374px;
+    }
+
+    body .cont-tecnologias .contenedor-imagen img{
+        height: 120px;
+    }
+
+    body .contacto form .textArea{
+        min-height: 100px;
+        height: 120px;
+        max-height: 200px;
+    }
+
+    .redes-sociales a{
+        width: 135px;
+    }
+
+    .redes-sociales a i{
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/*----Dispositivos móviles----*/
+@media screen and (max-width:375px) {
+
+    main .contenedor-imagen-me .imagen{
+        width: 300px;
+    }
+
+    main .contenedor-about-me .aptitudes{
+        margin: 2px 2px;
+    }
+
+   footer .redes-sociales a{
+        width: 100px;
+    }
+
+    .redes-sociales a i{
+        width: 50px;
+        height: 50px;
+    }
+
+    body .cont-tecnologias .contenedor-imagen img{
+        height: 100px;
+    }
+
+    body .contacto form .textArea{
+        min-height: 100px;
+        height: 100px;
+        max-height: 200px;
+    }
+
+    header .navbar .dropdown-menu a
+    main .about-me .parrafo{
+        font-size: 14px;
+    }
+
+    header .logo h2,
+    header .logo p{
+        font-size: 12px;
+    }
+
+    body .contacto form input,
+    body .contacto form .textArea{
+        font-size: 11px;
+
+    }
+}

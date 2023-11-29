@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio  de Daniel de Frutos</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    
+    <script src="js/jquery-3.3.1.min.js" defer></script>
+	<script src="js/popper.min.js" defer></script>
+	<script src="js/bootstrap.min.js" defer></script>
+	<script src="js/script.js" defer></script>
+    
+</head>
+
+<body>
+    <header>
+        <!----NAVEGACIÓN---->
+        <div class="container mt-4 mb-5">
+            <div class="nav row rounded-top align-items-stretch flex-wrap">
+
+                <!--Logo-->
+                <div class="logo col-md-12 col-lg-8 d-flex align-items-center justify-content-center justify-content-lg-start">
+                    <h2>DANIEL DE FRUTOS</h2>
+                    <span class="icono icon-dot"></span>
+                    <p class="text-muted">Desarrollador web junior</p>
+                </div>
+
+                <!--Menú-->
+                <nav class="navbar col-md-12 col-lg-4 p-0 d-flex align-items-stretch flex-wrap flex-sm-nowrap justify-content-center justify-content-lg-end">  
+                    <a href="#text" class="nav-item c-1 d-flex align-items-center justify-content-center w-100">
+                        <div class="d-flex flex-column text-center">
+                            <span>Contacto</span>
+                            <i class="icono icon-mail"></i>
+                        </div>
+                    </a>
+                    <a href="#" id="portfolio" class="nav-item dropdown c-2 d-flex align-items-center justify-content-center dropdown-toggle w-100" role="button" data-toggle="dropdown">
+                        <div class="d-flex flex-column text-center">
+                            <span>Proyectos</span>
+                            <i class="icono icon-briefcase"></i>
+                        </div>
+                    </a>
+                    <ul class="dropdown-menu w-100 text-center p-0" aria-labelledby="portfolio">
+                        <a href="https://github.com/danielDev0085/Juego-de-rol" class="list-group-item list-group-item-action list-group-item-primary text-dark">Juego de rol</a>
+                        <a href="https://github.com/danielDev0085/Aplicaci-n-gimnasio" class="list-group-item list-group-item-action list-group-item-secondary text-dark">Reservas en gimnasio</a>
+                        <a href="https://github.com/danielDev0085/App-de-instituto" class="list-group-item list-group-item-action list-group-item-primary text-dark">Gestión de instituto</a>
+                        <a href="https://github.com/danielDev0085/App-p-del" class="list-group-item list-group-item-action list-group-item-secondary text-dark">Crud pistas de pádel</a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!----SOBRE MÍ---->
+        <div class="container contenedor-about-me mt-5 mb-5">
+            <h2 class="titulo d-flex justify-content-center text-align-center mb-4">Acerca de</h2>
+            <div class="row">
+                <div class="contenedor-imagen-me col-12 col-lg-6 col-xl-5 p-0 mb-0 mt-0 d-flex justify-content-center align-items-start">
+                    <div>
+                        <img class="imagen img-fluid pl-lg-5 d-block" src="img/Daniel_perfil.jpg" alt="Foto personal">
+                    </div>
+                </div>
+
+                <!--Descripción personal-->
+                <div class="about-me col-12 col-lg-6 col-xl-7 mt-4 mt-lg-auto d-block justify-content-center text-justify">
+                    <p class="parrafo ml-lg-5">Hola! Me llamo Daniel y vivo en Madrid.</p>
+                    <p class="parrafo ml-lg-5">No hace mucho que decidí redirigir mi vida hacia el mundo de la programación y aunque ya sabía que me apasionaría no imaginaba que fuera hasta este punto.<p>
+                    <p class="parrafo ml-lg-5">Mis aficiones están muy relacionadas con la naturaleza, me encanta hacer rutas por la Sierra o por la casa de campo de Madrid ya que tengo la suerte de tenerla al lado. También disfruto mucho de la playa cuando hace buen tiempo y a la par de la nieve cuando tengo la ocasión.</p>
+                    <p class="parrafo ml-lg-5">El cine y las series también forman parte de mis preferencias cuando dispongo de tiempo y tanto esto último como la naturaleza lo disfruto todavía más si es en la compañía de mi familia y/o amigos.</P>
+                    <p class="parrafo ml-lg-5">Si tuviera que describir mis puntos fuertes serían los siguientes:</p>
+
+                    <!--Aptitudes-->
+                    <div class="cont-aptitudes mt-3 text-justify">
+                        <button class="aptitudes badges ml-lg-5 bg-danger rounded">Amabilidad</button>
+                        <button class="aptitudes ml-lg-5 bg-success rounded">Creatividad</button>
+                        <button class="aptitudes ml-lg-5 bg-secondary rounded">Trabajo en equipo</button>
+                        <button class="aptitudes ml-lg-5 bg-primary rounded">Versatilidad</button>
+                        <button class="aptitudes ml-lg-5 bg-warning rounded">Superación</button>
+                        <button class="aptitudes ml-lg-5 bg-info rounded">Responsabilidad</button>
+                        <button class="aptitudes ml-lg-5 bg-dark rounded">Puntualidad</button>
+                        <button class="aptitudes ml-lg-5 bg-success rounded">Ganas constantes de aprender</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!----TECNOLOGÍAS---->
+        <div class="container cont-tecnologias mt-5 mb-5 rounded">
+            <div class="row tecnologias">
+                <div class="col">
+                    <h2 class="titulo mb-2 mt-3">Tecnologías</h2>     
+                    <div class="row galeria justify-content-center">
+                        <div class="contenedor-imagen col-12 col-lg-4">
+                            <a href="#" data-toggle="modal" data-target="#modal">
+                                <img src="img/phpB.jpg" class="img-fluid imagen" alt="Imagen Php">
+                            </a>
+                        </div>
+                        <div class="contenedor-imagen col-12 col-lg-8">
+                            <a href="#" data-toggle="modal" data-target="#modal">
+                                <img src="img/javaB.jpg" class="img-fluid imagen" alt="Imagen Java">
+                            </a>
+                        </div>
+                        <div class="contenedor-imagen col-6 col-lg-4">
+                            <a href="#" data-toggle="modal" data-target="#modal">
+                                <img src="img/html.jpg" class="img-fluid imagen" alt="Imagen Java">
+                            </a>
+                        </div>
+                        <div class="contenedor-imagen col-6 col-lg-4">
+                            <a href="#" data-toggle="modal" data-target="#modal">
+                                <img src="img/xml.jpg" class="img-fluid imagen" alt="Imagen Xml">
+                            </a>
+                        </div>
+                        <div class="contenedor-imagen col-6 col-lg-4">
+                            <a href="#" data-toggle="modal" data-target="#modal">
+                                <img src="img/sql.jpg" class="img-fluid imagen" alt="Imagen Sql">
+                            </a>
+                        </div>
+                        <div class="contenedor-imagen col-12 col-lg-8">
+                            <a href="#" data-toggle="modal" data-target="#modal">
+                                <img src="img/javaScript2B.jpg" class="img-fluid imagen" alt="Imagen JavaScript">
+                            </a>
+                        </div>
+                        <div class="contenedor-imagen col-6 col-lg-4">
+                            <a href="#" data-toggle="modal" data-target="#modal">
+                                <img src="img/bootstrap.jpg" class="img-fluid imagen" alt="Imagen Bootstrap">
+                            </a>
+                        </div>
+
+                        <!--Ventana modal-->
+                        <div class="modal fade" id="modal">
+                            <div class="modal-dialog ">
+                                <div class="modal-content">
+                                    <img src="img/phpB.jpg" alt="" id="imagen-modal">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!----CONTACTO---->
+        <div class="container contacto mt-4 mb-5">
+            <div class="row d-flex justify-content-center">
+                <div class="col-10">
+                    <!--Formulario-->
+                    <form id="text" method="post" action="PHP/mail.php" enctype="multipart/form-data">
+                        <h2 class="titulo d-flex justify-content-center mb-4">Contacto</h2>
+
+                        <!--Inputs text-->
+                        <div class="row">
+                            <div class="col-6 pl-0 pr-4 d-flex justify-content-start">
+                                <input class="w-100" type="text" name="name" id="name" placeholder="Introduzca su nombre">
+                            </div>
+                            <div class="col-6 pr-0 pl-4 d-flex justify-content-end">
+                                <input class="w-100" type="email" name="mail" id="mail" placeholder="Introduzca su email">
+                            </div>
+                        </div>
+
+                        <!--Textarea-->
+                        <div class="row">
+                            <div class="col-12 mt-4 p-0 d-flex justify-content-center">
+                                <textarea class="textArea w-100" name="mensaje" id="mensaje" placeholder="Introduzca un comentario" autocapitalize="on" autocomplete="on"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 mt-4 p-0 d-flex justify-content-start">
+                                <input type="file" name="archivo" accept="image/*">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 mt-4 p-0 d-flex justify-content-center">
+                                <button type="submit" class="rounded px-3">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<footer>
+    <!----PIÉ DE PÁGINA (REDES)---->
+    <div class="container cont-redes">
+        <div class="row redes-sociales justify-content-center">
+            <div class="col-auto nav align-items-center justify-content-around">
+                <a href="https://www.linkedin.com/in/daniel-de-frutos" target="_blank" class="d-flex justify-content-center align-items-center mx-0">
+                    <i class="icon-linkedin linkedin d-flex justify-content-center align-items-center"></i>
+                </a>
+                <a href="https://www.github.com/danielDev0085/danielDev0085" target="_blank" class="d-flex justify-content-center align-items-center mx-0">
+                    <i class="icon-github-circled-alt2 github d-flex justify-content-center align-items-center"></i>
+                </a>
+                <a href="https://twitter.com/DanielDev0085" target="_blank" class="d-flex justify-content-center align-items-center mx-0">
+                    <i class="icon-twitter twitter d-flex justify-content-center align-items-center"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>
