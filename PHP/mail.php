@@ -47,11 +47,14 @@ try {
     $mailer->isSMTP();
     $mailer->Host='localhost'; 
     $mailer->SMTPSecure=false;
-    /*$mailer->Host='smtp.gmail.com';
-    $mailer->user='Daniel';
-    $mailer->password='silvia1190';*/
     $mailer->Port=25;
     $mailer->SMTPAuth=false;
+    /*$mailer->Host='smtp.gmail.com';
+    $mailer->user='';
+    $mailer->password='';
+    $mailer->Port=465;
+    $mailer->SMTPAuth=''ssl;*/
+    
 
     /*----CONFIGURACIÓN DEL MAIL----*/
     $mailer->setFrom($email, "$nombre"); 
@@ -65,8 +68,6 @@ try {
         $mailer->addAttachment( $archivo['tmp_name'], $archivo['name']);
     }
 
-    $mailer->send();
-
     if ($mailer->send()) {
         echo 'Mensaje enviado';
     } else {
@@ -77,5 +78,5 @@ try {
         echo 'Error en el envío del correo: {$e->ErrorInfo}';
 }
 
-/*header('location:../index.html');*/
+header('refresh:2, url=../index.html');
 ?>
